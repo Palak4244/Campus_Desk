@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Campus Desk | AI Student Support</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
+
+    <div class="bg-grid"></div>
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                ✦
+            </div>
+
+            <div>
+                <h1>Campus Desk</h1>
+
+                <span>
+                    AI STUDENT SUPPORT
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="system-status">
+
+            <span class="status-dot"></span>
+
+            <span>
+                AI SYSTEM OPERATIONAL
+            </span>
+
+        </div>
+
+
+        <div class="student-nav">
+
+            <div class="college-badge">
+                ABES
+            </div>
+
+            <div class="student-nav-info">
+
+                <strong>
+                    Palak
+                </strong>
+
+                <span>
+                    CSE • 2ND YEAR
+                </span>
+
+            </div>
+
+            <div class="profile-circle">
+                P
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="command-center">
+
+
+        <!-- =================================================
+             TOP AI HERO
+        ================================================== -->
+
+        <section class="ai-command-card">
+
+            <div class="command-content">
+
+                <div class="eyebrow">
+                    ✦ INTELLIGENT CAMPUS ASSISTANT
+                </div>
+
+                <h2>
+                    Your Campus.
+                    <span>Your AI.</span>
+                </h2>
+
+                <p>
+                    Ask questions about exams, fees, hostel,
+                    placement, attendance and transport.
+                    Campus Desk searches the university
+                    knowledge base to provide relevant answers.
+                </p>
+
+
+                <div class="feature-pills">
+
+                    <span>AI POWERED</span>
+                    <span>RAG</span>
+                    <span>NLP</span>
+                    <span>VERIFIED SOURCES</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- AI ORB -->
+
+            <div class="ai-orb">
+
+                <div class="orb-ring ring-one"></div>
+                <div class="orb-ring ring-two"></div>
+                <div class="orb-ring ring-three"></div>
+
+                <div class="orb-core">
+                    ✦
+                </div>
+
+                <div class="orb-label">
+                    CAMPUS AI
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MAIN WORKSPACE
+        ================================================== -->
+
+        <section class="workspace">
+
+
+            <!-- =============================================
+                 QUICK ACTIONS
+            ============================================== -->
+
+            <aside class="quick-panel">
+
+                <div class="panel-heading">
+
+                    <span>
+                        QUICK ACTIONS
+                    </span>
+
+                    <small>
+                        ASK FASTER
+                    </small>
+
+                </div>
+
+
+                <button
+                    class="quick-action"
+                    onclick="quickQuestion('When are the semester examinations?')"
+                >
+
+                    <div class="action-icon">
+                        📅
+                    </div>
+
+                    <div>
+                        <strong>Examinations</strong>
+                        <span>Schedule & dates</span>
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="quick-action"
+                    onclick="quickQuestion('What is the B.Tech academic fee?')"
+                >
+
+                    <div class="action-icon">
+                        ₹
+                    </div>
+
+                    <div>
+                        <strong>College Fees</strong>
+                        <span>Academic fee information</span>
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="quick-action"
+                    onclick="quickQuestion('What is the hostel fee for a four seater room?')"
+                >
+
+                    <div class="action-icon">
+                        🏠
+                    </div>
+
+                    <div>
+                        <strong>Hostel</strong>
+                        <span>Fees & hostel information</span>
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="quick-action"
+                    onclick="quickQuestion('What is the placement process at ABES?')"
+                >
+
+                    <div class="action-icon">
+                        🎓
+                    </div>
+
+                    <div>
+                        <strong>Placement</strong>
+                        <span>Placement information</span>
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="quick-action"
+                    onclick="quickQuestion('What are the attendance requirements?')"
+                >
+
+                    <div class="action-icon">
+                        📊
+                    </div>
+
+                    <div>
+                        <strong>Attendance</strong>
+                        <span>Attendance information</span>
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="quick-action"
+                    onclick="quickQuestion('What transport facilities are available?')"
+                >
+
+                    <div class="action-icon">
+                        🚌
+                    </div>
+
+                    <div>
+                        <strong>Transport</strong>
+                        <span>Routes & facilities</span>
+                    </div>
+
+                </button>
+
+
+                <div class="quick-status">
+
+                    <span class="status-dot"></span>
+
+                    <div>
+
+                        <strong>
+                            Knowledge Base
+                        </strong>
+
+                        <span>
+                            5 sources connected
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+
+
+            <!-- =============================================
+                 CHAT
+            ============================================== -->
+
+            <section class="chat-panel">
+
+
+                <!-- Chat Header -->
+
+                <div class="chat-topbar">
+
+                    <div class="ai-profile">
+
+                        <div class="ai-avatar">
+                            ✦
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Campus AI
+                            </strong>
+
+                            <span>
+                                Intelligent Student Support
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chat-badges">
+
+                        <span>
+                            RAG
+                        </span>
+
+                        <span>
+                            NLP
+                        </span>
+
+                        <span class="online-badge">
+                            ● ONLINE
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Messages -->
+
+                <div
+                    id="chatMessages"
+                    class="chat-messages"
+                >
+
+                    <!-- Initial AI message -->
+
+                    <div class="welcome-message">
+
+                        <div class="bot-avatar">
+                            ✦
+                        </div>
+
+                        <div class="welcome-content">
+
+                            <span class="message-label">
+                                CAMPUS AI
+                            </span>
+
+                            <h3>
+                                How can I help you today?
+                            </h3>
+
+                            <p>
+                                Ask me about exams, fees,
+                                hostel, placement,
+                                attendance or transport.
+                            </p>
+
+                            <div class="welcome-tags">
+
+                                <span>
+                                    Academic
+                                </span>
+
+                                <span>
+                                    Hostel
+                                </span>
+
+                                <span>
+                                    Placement
+                                </span>
+
+                                <span>
+                                    Campus
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Typing -->
+
+                <div
+                    id="typing"
+                    class="typing"
+                    style="display:none;"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <label>
+                        Campus AI is thinking...
+                    </label>
+
+                </div>
+
+
+
+                <!-- Input -->
+
+                <div class="input-area">
+
+                    <div class="input-box">
+
+                        <span class="input-icon">
+                            ✦
+                        </span>
+
+                        <input
+                            id="questionInput"
+                            type="text"
+                            placeholder="Ask Campus Desk anything..."
+                            autocomplete="off"
+                        >
+
+                        <button
+                            id="sendButton"
+                            type="button"
+                        >
+                            ASK AI
+                            <span>➜</span>
+                        </button>
+
+                    </div>
+
+                    <div class="input-footer">
+
+                        <span>
+                            Press Enter to send
+                        </span>
+
+                        <span>
+                            Powered by Campus Desk AI
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =============================================
+                 ANALYTICS
+            ============================================== -->
+
+            <aside class="analytics-panel">
+
+
+                <div class="analytics-header">
+
+                    <span>
+                        AI ANALYTICS
+                    </span>
+
+                    <i></i>
+
+                </div>
+
+
+                <!-- AI STATUS -->
+
+                <div class="ai-status-card">
+
+                    <div class="status-circle">
+
+                        <strong>
+                            AI
+                        </strong>
+
+                        <span>
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+                    <div class="status-lines">
+
+                        <div>
+                            <span>
+                                Intent Engine
+                            </span>
+
+                            <strong>
+                                ACTIVE
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>
+                                Distress Detection
+                            </span>
+
+                            <strong>
+                                ACTIVE
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>
+                                RAG Retrieval
+                            </span>
+
+                            <strong>
+                                ONLINE
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- LAST RESPONSE -->
+
+                <div class="analytics-card">
+
+                    <div class="card-title">
+                        LAST RESPONSE
+                    </div>
+
+
+                    <div class="metric">
+
+                        <span>
+                            INTENT
+                        </span>
+
+                        <strong id="intentValue">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <span>
+                            CONFIDENCE
+                        </span>
+
+                        <strong id="confidenceValue">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="confidence-bar">
+
+                        <div
+                            id="confidenceFill"
+                            class="confidence-fill"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <span>
+                            STATUS
+                        </span>
+
+                        <strong id="responseStatus">
+                            READY
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SOURCE -->
+
+                <div class="source-card">
+
+                    <div class="card-title">
+                        KNOWLEDGE SOURCE
+                    </div>
+
+                    <div class="source-icon">
+                        ◫
+                    </div>
+
+                    <strong>
+                        ABES Knowledge Base
+                    </strong>
+
+                    <p>
+                        Answers are retrieved from
+                        the connected university
+                        knowledge sources.
+                    </p>
+
+                    <span class="source-status">
+                        ● VERIFIED SOURCE
+                    </span>
+
+                </div>
+
+
+
+                <!-- PROJECT INFO -->
+
+                <div class="project-card">
+
+                    <div class="card-title">
+                        SYSTEM
+                    </div>
+
+                    <div class="project-row">
+                        <span>Models</span>
+                        <strong>3</strong>
+                    </div>
+
+                    <div class="project-row">
+                        <span>RAG Sources</span>
+                        <strong>5</strong>
+                    </div>
+
+                    <div class="project-row">
+                        <span>API</span>
+                        <strong>FASTAPI</strong>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <span>
+            © 2026 CAMPUS DESK
+        </span>
+
+        <span>
+            AI STUDENT SUPPORT SYSTEM
+        </span>
+
+        <span>
+            ABES ENGINEERING COLLEGE
+        </span>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
